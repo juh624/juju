@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9dfc7;
+    color: #58382d;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    height: 160px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 12%;
+}
+
+header img {
+    width: 220px;
+    height: 170px;
+    object-fit: contain;
+}
+
+nav a:hover {
+    background: #bc876c;
+    color: #ffffff;
+}
+nav {
+    display: flex;
+    gap: 40px;
+
+    margin-left: 90px;
+}
+
+nav a {
+    color: #58382d;
+    text-decoration: none;
+
+    background-color: #d9ad96;
+
+    padding: 12px 45px;
+
+    border-radius: 30px;
+
+    font-size: 20px;
+}
+
+nav a:first-child {
+    background-color: #b98267;
+    color: #fff3e8;
+}
+
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    text-align: center;
+
+    padding: 15px 10% 45px;
+
+    position: relative;
+}
+
+.apresentacao aside {
+    position: absolute;
+
+    right: 20%;
+
+    top: 0;
+}
+
+.apresentacao aside img {
+    width: 100px;
+}
+
+.apresentacao aside figcaption {
+    display: none;
+}
+
+.apresentacao h1 {
+    color: #b98267;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    line-height: 1.35;
+max-width: 600px;
+    margin-bottom: 10px;
+    margin: 0 auto 10px;
+}
+
+.apresentacao p {
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 100px;
+
+    padding: 10px 8% 50px;
+}
+
+.beneficio {
+    width: 390px;
+    height: 200px;
+
+    display: flex;
+
+    background-color: #f5d3b3;
+
+    border: 2px solid #58382d;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.beneficio figure {
+    width: 145px;
+    flex-shrink: 0;
+}
+
+.beneficio figure img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.beneficio figure figcaption {
+    display: none;
+}
+
+.beneficio div {
+    padding: 25px 18px;
+
+    text-align: center;
+}
+
+.beneficio h2 {
+    color: #9e6d57;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.beneficio p {
+    font-size: 15px;
+    line-height: 1.4;
+    
+    
+}
+
+
+/* DESTINOS EM DESTAQUE */
+
+.destaques {
+    text-align: center;
+
+    padding: 30px 8% 50px;
+}
+
+.destaques > h2 {
+    color: #4d331b;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 55px;
+}
+
+.card {
+    
+    width: 205px;
+    height: 355px;
+
+    background-color: #f9dfc7;
+
+    border: 3px solid #c08c72;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    padding-bottom: 15px;
+     display: flex;
+    flex-direction: column;
+
+}
+
+   
+.card figure {
+    margin: 0;
+}
+
+.card figure img {
+    display: block;
+
+    width: 100%;
+    height: 135px;
+
+    object-fit: cover;
+}
+
+.card figure figcaption {
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    color: #58382d;
+
+    padding: 8px 5px;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    font-weight: normal;
+
+    margin: 5px;
+}
+
+.card p {
+    font-size: 15px;
+
+    line-height: 1.35;
+
+    margin: 8px 10px;
+    
+}
+.botao-detalhes {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 8px 18px;
+
+    background-color: #d9ad96;
+
+    color: #58382d;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    border-radius: 20px;
+     margin-top: auto;
+    align-self: center;
+
+}
+
+.botao-detalhes:hover {
+    background-color: #b98267;
+
+    color: #ffffff;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 12px 45px;
+
+    background-color: #b98267;
+
+    color: #fff3e8;
+
+    text-decoration: none;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    border-radius: 25px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #58382d;
+}

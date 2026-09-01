@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ffe1c8;
+    color: #51301f;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 140px;
+}
+
+
+.logo {
+    width: 150px;
+    height: auto;
+
+    display: block;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 32px;
+
+    margin-left: 70px;
+}
+
+
+nav a {
+    width: 180px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #d9ad96;
+
+    border-radius: 30px;
+
+    color: #51301f;
+
+    text-decoration: none;
+
+    font-size: 22px;
+}
+
+
+nav a:hover {
+    background-color: #b77f65;
+
+    color: white;
+}
+
+
+nav a.ativo {
+    background-color: #bf896f;
+
+    color: #fff5ed;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 100%;
+
+    text-align: center;
+
+    padding-bottom: 50px;
+}
+
+
+main > h1 {
+    font-family: Georgia, serif;
+
+    font-size: 58px;
+
+    font-weight: normal;
+
+    margin-top: 5px;
+
+    margin-bottom: 70px;
+}
+
+
+/* =========================
+   RESERVA
+========================= */
+
+.reserva {
+    width: 585px;
+
+    height: 410px;
+
+    margin: 0 auto;
+
+    border: 3px solid #000;
+
+    display: flex;
+
+    background-color: #ffe1c8;
+}
+
+
+/* =========================
+   DETALHES
+========================= */
+
+.detalhes {
+    width: 56%;
+
+    padding-top: 12px;
+
+    border-right: 3px solid #000;
+}
+
+
+.detalhes h2 {
+    font-size: 40px;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+
+.detalhes p {
+    font-size: 24px;
+
+    line-height: 1.3;
+
+    margin-bottom: 2px;
+}
+
+
+/* =========================
+   DADOS
+========================= */
+
+.dados {
+    width: 44%;
+
+    padding: 15px 23px;
+
+    text-align: left;
+}
+
+
+.dados label {
+    display: block;
+
+    font-size: 24px;
+
+    margin-bottom: 3px;
+
+    margin-left: 8px;
+}
+
+
+.dados input {
+    width: 187px;
+
+    height: 48px;
+
+    margin-bottom: 14px;
+
+    padding: 8px 12px;
+
+    border: 1px solid #777;
+
+    box-shadow: -5px 5px 0 #000;
+
+    font-size: 18px;
+}
+
+
+.dados input::placeholder {
+    color: #777;
+}
+
+
+/* =========================
+   QUANTIDADE
+========================= */
+
+.quantidade {
+    margin-top: 25px;
+}
+
+
+.quantidade p {
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+.quantidade select {
+    border: none;
+
+    background-color: transparent;
+
+    font-size: 34px;
+
+    color: #000;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   PAGAMENTO
+========================= */
+
+.pagamento {
+    margin-top: 5px;
+}
+
+
+.pagamento h2 {
+    font-size: 25px;
+
+    font-weight: normal;
+
+    margin-bottom: 28px;
+}
+
+
+.opcoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 27px;
+}
+
+
+.opcoes label input {
+    display: none;
+}
+
+
+.opcoes label span {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 165px;
+
+    height: 43px;
+
+    background-color: #d9ad96;
+
+    border-radius: 25px;
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+
+.opcoes label input:checked + span {
+    background-color: #bf896f;
+
+    color: white;
+}
+
+
+/* =========================
+   OBSERVAÇÕES
+========================= */
+
+.observacoes {
+    margin-top: 35px;
+}
+
+
+.observacoes textarea {
+    width: 438px;
+
+    height: 180px;
+
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #d9ad96;
+
+    color: #51301f;
+
+    resize: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 23px;
+
+    line-height: 1.35;
+}
+
+
+.observacoes textarea::placeholder {
+    color: #66534a;
+
+    opacity: 1;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 34px;
+
+    margin-top: 16px;
+}
+
+
+.confirmar,
+.voltar {
+    width: 330px;
+
+    height: 51px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: none;
+
+    border-radius: 20px;
+
+    font-size: 24px;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+}
+
+
+.confirmar {
+    background-color: #bd866d;
+
+    color: #fff5ed;
+}
+
+
+.voltar {
+    background-color: #d9ad96;
+
+    color: #51301f;
+}
+
+
+.confirmar:hover {
+    background-color: #a96f57;
+}
+
+
+.voltar:hover {
+    background-color: #bf896f;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 13px;
+
+    color: #51301f;
+}
